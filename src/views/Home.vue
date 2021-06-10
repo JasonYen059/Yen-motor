@@ -14,10 +14,10 @@ export default {
             transName:"fadein",
             show: 1,
             imgs:[
-                {src:'/work1.jpg',id:1},
-                {src:'/work2.jpg',id:2},
-                {src:'/work3.jpg',id:3},
-                {src:'/yen.jpg',id:4}
+                {src:'work1.jpg',id:1},
+                {src:'work2.jpg',id:2},
+                {src:'work3.jpg',id:3},
+                {src:'yen.jpg',id:4}
             ],
         }
     },

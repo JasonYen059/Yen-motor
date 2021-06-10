@@ -1,7 +1,7 @@
 <template>
   <div id="about">
     <div class="text">
-      <img src="@/assets/yencustom.png" width="380px" height="auto">
+      <img src="../../public/yencustom.png" width="380px" height="auto">
       <p> Since 2021, Lorem ipsum dolor sit amet, consectetur adipiscing gravida mauris. Fusce ornare ornare semper. Quisque pretium. elit. Nullam et tempus dolor, et gravida metus. Nullam id </p>
     </div>
   </div>
@@ -9,7 +9,7 @@
 
 <style scoped>
   #about {
-    background-image: url('/door.jpg');
+    background-image: url('../../public/door.jpg');
     background-size: cover;
     position: absolute;
     top: 0;

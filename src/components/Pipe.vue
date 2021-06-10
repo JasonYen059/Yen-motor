@@ -1,7 +1,7 @@
 <template >
 <div id="pipediv"> 
-    <img v-if="showpipe == 21" class="pipeimg" src="/pipe1.png">
-    <img v-else class="pipeimg" src="/pipe2.png">
+    <img v-if="showpipe == 21" class="pipeimg" src="../../public/pipe1.png">
+    <img v-else class="pipeimg" src="../../public/pipe2.png">
 </div>
 </template>
 

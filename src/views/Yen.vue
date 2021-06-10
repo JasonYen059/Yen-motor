@@ -2,7 +2,7 @@
     <div >
     <inputcom @tankimg="getimg"></inputcom>
     <div class="motor">
-      <img src="/engine.png" width="400px" height="auto">
+      <img src="../../public/engine.png" width="400px" height="auto">
 
       <div class="motorbody">
         <svg id="motorbody" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 317.11 211.4"><path :d="mobody[0].url"/></svg>
@@ -30,10 +30,10 @@
   </div>
   
   <div id="controldir">
-    <button class="way" @click="movel(imgtypefromchild)"><img class="dirbutton" src="/left.png" ></button>
-    <button class="way" @click="mover(imgtypefromchild)"><img class="dirbutton" src="/right.png" ></button>
-    <button class="way" @click="moveu(imgtypefromchild)"><img class="dirbutton" src="/up.png" ></button>
-    <button class="way" @click="moved(imgtypefromchild)"><img class="dirbutton" src="/down.png" ></button>
+    <button class="way" @click="movel(imgtypefromchild)"><img class="dirbutton" src="left.png" ></button>
+    <button class="way" @click="mover(imgtypefromchild)"><img class="dirbutton" src="right.png" ></button>
+    <button class="way" @click="moveu(imgtypefromchild)"><img class="dirbutton" src="up.png" ></button>
+    <button class="way" @click="moved(imgtypefromchild)"><img class="dirbutton" src="down.png" ></button>
   </div>
   
     </div>

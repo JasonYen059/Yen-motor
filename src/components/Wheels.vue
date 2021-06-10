@@ -1,8 +1,8 @@
 <template >
 <div id="wheelsdiv"> 
-    <img v-if="showwheels == 14" class="wheelsimg" src="/wheels1818.png">
-    <img v-else-if="showwheels == 15" class="wheelsimg" src="/wheels1817.png">
-    <img v-else class="wheelsimg" src="/wheels1717.png">
+    <img v-if="showwheels == 14" class="wheelsimg" src="../../public/wheels1818.png">
+    <img v-else-if="showwheels == 15" class="wheelsimg" src="../../public/wheels1817.png">
+    <img v-else class="wheelsimg" src="../../public/wheels1717.png">
 </div>
 </template>
 

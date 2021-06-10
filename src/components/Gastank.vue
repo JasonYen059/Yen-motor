@@ -67,7 +67,7 @@ export default {
     }
 
     .darkzone{
-    fill-opacity: 10%;
+    fill-opacity: 20%;
     fill: black;
   }
 
