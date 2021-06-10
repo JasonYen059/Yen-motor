@@ -1,17 +1,42 @@
 <template>
-  <div class="about">
-    <h1>About YenCustom</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et tempus dolor, et gravida metus. Nullam id gravida mauris. Fusce ornare ornare semper. Quisque pretium elit tortor, sed vehicula sem blandit et. Nullam vestibulum risus tortor, ac maximus mi cursus sed. Morbi pulvinar lectus non vulputate lobortis. Maecenas ac lacus commodo, viverra libero sed, ultrices nisi. Maecenas sodales ipsum ante, ac tincidunt nulla blandit at. In porta tellus sapien, quis egestas turpis malesuada eget. Fusce semper sagittis eros, ut egestas justo congue sed. Nunc non vehicula leo, nec pretium urna. Nam ut nisl dictum, tincidunt augue sed, pulvinar nunc. Donec et quam vulputate, aliquet nunc eu, iaculis risus. Phasellus in luctus risus, vel facilisis mauris.</p>
+  <div id="about">
+    <div class="text">
+      <img src="@/assets/yencustom.png" width="380px" height="auto">
+      <p> Since 2021, Lorem ipsum dolor sit amet, consectetur adipiscing gravida mauris. Fusce ornare ornare semper. Quisque pretium. elit. Nullam et tempus dolor, et gravida metus. Nullam id </p>
+    </div>
   </div>
 </template>
 
 <style scoped>
-  .about{
-    width: 500px;
-    margin: auto;
-    
-  }
+  #about {
+    background-image: url('/door.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    }
+  
   p {
-    text-align: left;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+    margin:  150px auto;
+    color: #ebebeb;
+  }
+
+  .text {
+    margin:70px 0 0 30px;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
   }
 </style>
