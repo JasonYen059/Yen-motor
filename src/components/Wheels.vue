@@ -30,7 +30,7 @@ export default {
 <style >
     #wheelsdiv{
         position: absolute;
-        right: 290px;
+        left: 306px;
         top: 265px;
         z-index: 1;
     }

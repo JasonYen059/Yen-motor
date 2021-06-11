@@ -29,7 +29,7 @@ export default {
 <style >
     #pipediv{
         position: absolute;
-        right: 618px;
+        left: 490px;
         top: 250px;
         z-index: 13;
     }

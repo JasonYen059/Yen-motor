@@ -63,7 +63,7 @@ export default {
         position: absolute;
         top: 150px;
         z-index: 10;
-        right: 470px;
+        left: 540px;
     }
 
     .darkzone{

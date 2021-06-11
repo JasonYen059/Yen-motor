@@ -42,7 +42,7 @@ export default {
         position: absolute;
         top: 160px;
         z-index: 0;
-        right: 455px;
+        left: 863px;
     }
     .lightzone05{
         fill: white;
