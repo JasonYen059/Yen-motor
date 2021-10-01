@@ -1,9 +1,8 @@
 <template>
     <transition-group tag="div" id="home" :name="transName">
         <div  v-for='img in imgs' :key="img.id" v-show="img.id === show">
-            <img :src="img.src" width="100%" height="auto">
+            <img :src="img.src" >
         </div>
-        
     </transition-group>
 </template>
 
@@ -37,16 +36,17 @@ export default {
 <style scoped>
 #home {
     overflow: hidden;
-    padding: 0;
-    box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     top: 0;
 }
 
 img {
+    width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
 }
 
 .fadein-enter-active,  .fadein-leave-active{

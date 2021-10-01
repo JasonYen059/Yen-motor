@@ -1,7 +1,7 @@
 module.exports = {
     // 公共路径(必须有的)
     publicPath: process.env.NODE_ENV === 'production'
-    ? '/yen-motor/'
+    ? '/Yenmotor/'
     : '/',
     configureWebpack: config => {
         // 为生产环境修改配置...

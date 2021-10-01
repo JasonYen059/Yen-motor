@@ -1,50 +1,54 @@
 <template>
-  <div id="app" :style="backimg">
-      <div id="routerContainer">
-        <router-link to='/home' class="pages"> H O M E </router-link>
+  <div id="app" >
+      <div class="routerContainer">
+        <router-link to='/' class="pages"> H O M E </router-link>
         <router-link to='/about' class="pages"> A B O U T </router-link>
         <router-link to='/Yen' class="pages"> C U S T O M </router-link> 
+      </div> 
       <transition name="slide" >
         <router-view/>
       </transition>
-      </div>  
+      
   </div>
 </template>
 
 <script>
 
 export default {
-  methods:{},
+  methods:{
+    hide(){
+      this.testshow = false
+    }
+  },
   data(){
     return{
-      backimg:{
-        // backgroundImage:'url(/work1.jpg)',
-        width:'100%',
-        minHeight:'100vh',
-        backgroundSize:'cover'
+      testshow:true,
       }
     }
   }  
-}
 </script>
 
 
 <style >
 
-#app {
-  color: #2c3e50;
-  background-color: #5c5c5c;
+.routerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 15px;
+  width: 100%;
+  height: 10%;
 }
 
 .pages {
-  margin: 15px;
+  margin:0 2vw;
   color: rgb(138, 138, 138);
-  font-size: 20px;
+  font-size: 2vw;
   text-decoration-line: none;
-  position: relative;
-  left: 600px;
-  top: 20px;
-  z-index: 6;
+  z-index: 2;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .pages:hover {
@@ -52,25 +56,36 @@ export default {
   transition: all 1s ease;
 }
 
-#routerContainer {
-  width: 100%;
-  min-height: 100vh;
-  
-}
-
 .router-link-exact-active{
   color: rgb(187, 185, 185);
-  padding: 10px 0;
   border-bottom: 2px solid rgb(187,185,185);
+
 }
 .slide-enter-active,
 .slide-leave-active{
-  transition: opacity 1s 
+  transition: all 1s ease;
 }
 .slide-enter,
 .slide-leave-to {
   opacity: 0;
-  
 }
 
+@media (max-width:737px){
+  .routerContainer{
+    padding-top: 5px;
+  }
+  .router-link-exact-active{
+  color: rgb(211, 211, 211);
+  border: none;
+}
+  .pages{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:375px){
+    .pages{
+      font-size: 1rem;
+    }
+  }
 </style>
